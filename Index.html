@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lamine HQ | Lamine Yamal</title>
+
+  <title>Lamine HQ 🇪🇸</title>
 
   <style>
     * {
@@ -14,34 +15,33 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #080808;
+      background: #070707;
       color: white;
     }
 
     header {
       background: linear-gradient(135deg, #004d98, #a50044);
-      padding: 35px 20px;
+      padding: 45px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 42px;
+      font-size: 45px;
       font-weight: 900;
     }
 
     header p {
       margin-top: 8px;
-      font-size: 16px;
-      opacity: 0.9;
+      opacity: .9;
     }
 
     nav {
-      background: #111;
-      padding: 14px;
-      text-align: center;
       position: sticky;
       top: 0;
       z-index: 10;
+      background: #111;
+      padding: 15px;
+      text-align: center;
     }
 
     nav a {
@@ -56,26 +56,17 @@
     }
 
     .hero {
-      min-height: 420px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 70px 20px;
       text-align: center;
-      padding: 50px 20px;
-      background:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.8)),
-        url("https://upload.wikimedia.org/wikipedia/commons/8/8c/Lamine_Yamal_2025.jpg");
-      background-size: cover;
-      background-position: center;
+      background: linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.9)
+      );
     }
 
     .hero h2 {
-      font-size: 48px;
+      font-size: 45px;
       margin-bottom: 12px;
-    }
-
-    .hero p {
-      font-size: 19px;
     }
 
     .container {
@@ -84,67 +75,79 @@
       padding: 40px 20px;
     }
 
-    .section-title {
+    .title {
       font-size: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
       border-left: 5px solid #a50044;
       padding-left: 12px;
     }
 
-    .cards {
+    .news {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 18px;
     }
 
-    .card {
+    .article {
       background: #151515;
+      border: 1px solid #292929;
       border-radius: 14px;
       padding: 22px;
-      border: 1px solid #292929;
+      transition: .2s;
     }
 
-    .card h3 {
+    .article:hover {
+      transform: translateY(-3px);
+      border-color: #a50044;
+    }
+
+    .article h3 {
+      font-size: 21px;
       margin-bottom: 10px;
-      color: #ffcc00;
     }
 
-    .stat {
-      font-size: 32px;
-      font-weight: 900;
+    .article p {
+      color: #aaa;
+      margin-bottom: 12px;
+    }
+
+    .article a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .date {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: #777;
+      margin-top: 30px;
     }
 
     .social {
       display: inline-block;
       margin-top: 20px;
-      padding: 12px 20px;
       background: #1d9bf0;
+      padding: 12px 22px;
+      border-radius: 25px;
       color: white;
       text-decoration: none;
-      border-radius: 999px;
       font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background: #111;
-      margin-top: 30px;
-      color: #aaa;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 32px;
+        font-size: 34px;
       }
 
       .hero h2 {
-        font-size: 35px;
-      }
-
-      nav a {
-        margin: 0 6px;
-        font-size: 14px;
+        font-size: 34px;
       }
     }
   </style>
@@ -152,87 +155,123 @@
 
 <body>
 
-  <header>
-    <h1>LAMINE HQ 🇪🇸</h1>
-    <p>News • Stats • Edits • Updates</p>
-  </header>
+<header>
+  <h1>LAMINE HQ 🇪🇸</h1>
+  <p>News • Stats • Updates • Edits</p>
+</header>
 
-  <nav>
-    <a href="#news">News</a>
-    <a href="#stats">Stats</a>
-    <a href="#about">About</a>
-  </nav>
+<nav>
+  <a href="#news">News</a>
+  <a href="#about">About</a>
+</nav>
 
-  <section class="hero">
-    <div>
-      <h2>Lamine Yamal</h2>
-      <p>The latest news, stats and updates from Lamine HQ 🔵🔴</p>
-    </div>
-  </section>
+<section class="hero">
+  <h2>Lamine Yamal</h2>
+  <p>The latest Lamine Yamal news, automatically updated.</p>
 
-  <section class="container" id="news">
-    <h2 class="section-title">Latest Updates 📰</h2>
+  <a
+    class="social"
+    href="https://x.com/Lamine_HQ"
+    target="_blank">
+    Follow @Lamine_HQ
+  </a>
+</section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Welcome to Lamine HQ</h3>
-        <p>Your fan page for Lamine Yamal — news, stats, edits and more.</p>
-      </div>
+<section class="container" id="news">
 
-      <div class="card">
-        <h3>Match Updates</h3>
-        <p>Match information and performances will be posted here.</p>
-      </div>
+  <h2 class="title">Latest News 📰</h2>
 
-      <div class="card">
-        <h3>Latest News</h3>
-        <p>Check our X account for the newest updates.</p>
-      </div>
-    </div>
-  </section>
+  <div id="news-container" class="news">
+    <p>Loading latest news...</p>
+  </div>
 
-  <section class="container" id="stats">
-    <h2 class="section-title">Player Profile 📊</h2>
+</section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Player</h3>
-        <p class="stat">Lamine Yamal</p>
-      </div>
+<section class="container" id="about">
 
-      <div class="card">
-        <h3>Nationality</h3>
-        <p class="stat">🇪🇸</p>
-      </div>
+  <h2 class="title">About</h2>
 
-      <div class="card">
-        <h3>Club</h3>
-        <p class="stat">FC Barcelona</p>
-      </div>
-    </div>
-  </section>
+  <div class="article">
+    <p>
+      Lamine HQ is an independent fan page dedicated to
+      Lamine Yamal. We share news, statistics, updates and edits.
+    </p>
+  </div>
 
-  <section class="container" id="about">
-    <h2 class="section-title">About Lamine HQ</h2>
+</section>
 
-    <div class="card">
-      <p>
-        Lamine HQ is an independent fan page dedicated to Lamine Yamal.
-        We share news, statistics, edits and updates.
-      </p>
+<footer>
+  © 2026 Lamine HQ • Independent fan account
+</footer>
 
-      <a
-        class="social"
-        href="https://x.com/YOUR_X_USERNAME"
-        target="_blank">
-        Follow us on X →
-      </a>
-    </div>
-  </section>
+<script>
 
-  <footer>
-    © 2026 Lamine HQ • Independent fan account
-  </footer>
+async function loadNews() {
+
+  const container = document.getElementById("news-container");
+
+  try {
+
+    const response = await fetch("news.json?cache=" + Date.now());
+
+    const news = await response.json();
+
+    container.innerHTML = "";
+
+    if (!news.length) {
+      container.innerHTML = "<p>No news available yet.</p>";
+      return;
+    }
+
+    news.forEach(article => {
+
+      const div = document.createElement("div");
+
+      div.className = "article";
+
+      div.innerHTML = `
+        <div class="date">
+          ${new Date(article.date).toLocaleString()}
+        </div>
+
+        <h3>${escapeHTML(article.title)}</h3>
+
+        <p>${escapeHTML(article.source)}</p>
+
+        <a
+          href="${article.link}"
+          target="_blank"
+          rel="noopener">
+          Read article →
+        </a>
+      `;
+
+      container.appendChild(div);
+
+    });
+
+  } catch (error) {
+
+    container.innerHTML =
+      "<p>Unable to load news right now.</p>";
+
+  }
+
+}
+
+function escapeHTML(text) {
+
+  const div = document.createElement("div");
+
+  div.textContent = text;
+
+  return div.innerHTML;
+
+}
+
+loadNews();
+
+</script>
 
 </body>
 </html>
